@@ -162,22 +162,6 @@ class User
 		echo "</div>";
 	}
 
-	// public static function changePassword($oldPassword, $newPassword)
-	// {
-	// 	if (!self::loggedIn()) {
-	// 		Messages::error("Login first!");
-	// 		return;
-	// 	}
-	// 	$query = Db::fetch("users", "password", "token = ? ", self::getToken(), "", "", "");
-	// 	$dataCurrentPassword = Db::num($query);
-	// 	$currentPassword = $dataCurrentPassword[0];
-	// 	if ($currentPassword != $oldPassword) {
-	// 		Messages::error("Your old password could not be found in the system");
-	// 		return;
-	// 	}
-	// 	Db::update("users", array("password"), array($newPassword), "token = ? ", self::getToken());
-	// 	Messages::success("Your password has been updated");
-	// }
 	public static function changePassword($oldPassword, $newPassword)
 	{
 		if (!self::loggedIn()) {

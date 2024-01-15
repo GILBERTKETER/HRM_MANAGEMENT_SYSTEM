@@ -61,6 +61,7 @@ if (User::loggedIn()) {
 								<div class='col-md-6'>
 									<div class='form-holder'>
 										<?php Db::form(array("Email", "Password"), 3, array("login-email", "login-password"), array("text", "password"), "Login"); ?>
+										<a href="requestPassword_change.php">forgot password?</a>
 									</div>
 								</div>
 								<div class='col-md-3'></div>
